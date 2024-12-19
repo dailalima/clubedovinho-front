@@ -12,10 +12,10 @@
     <body class="container">
         <hr>
         <nav class="text-end">
-            <a href="dashboard.html" class="btn btn-dark">
+            <a href="dashboard.html" class="btn btn-outline-dark">
                 Dashboard
             </a>
-            <a href="categorias.html" class="btn btn-outline-dark">
+            <a href="categorias.html" class="btn btn-dark">
                 Categorias
             </a>
             <a href="clientes.html" class="btn btn-outline-dark">
@@ -35,10 +35,20 @@
         </nav>
         <hr>
 
-        <h2>Dashboard</h2>
+        <h2>Nova Categoria</h2>
 
-        <section class="card card-body">
+        <div class="text-end">
+            <a class="btn btn-outline-dark" href="categorias.html">Voltar</a>
+        </div>
 
+        <section class="card card-body mt-3">
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input placeholder="Digite aqui" type="text" class="form-control mb-3">
+
+                <label for="descrição">Descrição:</label>
+                <textarea placeholder="Digite aqui" class="form-control mb-3"></textarea>
+            </form>
         </section>
 
 
