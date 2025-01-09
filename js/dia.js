@@ -4,11 +4,6 @@ const SELECT_DIA = document.getElementById('select-dia');
 const SELECT_MES = document.getElementById('select-mes');
 const SELECT_ANO = document.getElementById('select-ano');
 
-const meses = [
-    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
-    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
-];
-
 while (numero <= 31) {
     SELECT_DIA.innerHTML += `<option>${numero}</option>`;
 
@@ -20,10 +15,26 @@ while (numero <= 31) {
 //---------- MES ------------
 let mes = 1;
 
+const meses = {
+    1: "Janeiro",
+    2: "Fevereiro",
+    3: "Março",
+    4: "Abril",
+    5: "Maio",
+    6: "Junho",
+    7: "Julho",
+    8: "Agosto",
+    9: "Setembro",
+    10: "Outubro",
+    11: "Novembro",
+    12: "Dezembro"
+};
+ b
 do {
-    SELECT_MES.innerHTML += `<option>${mes}</option>`;
+    SELECT_MES.innerHTML += `<option>${meses[mes]}</option>`;
     mes++;
 } while(mes <= 12);
+
 
 //========= ANO ------------
 for (let ano = 2025; ano >= 1950; ano--) {
