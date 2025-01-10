@@ -1,0 +1,38 @@
+<script>
+
+    //let x = 0;
+
+    //if (x == '0') {
+    //    document.write('é igual');
+    //} else {
+    //   document.write('é  diferente');
+    //}
+
+    let alunos = [
+        'Maria',
+        'Josefa',
+        'Zenilda',
+    ];
+
+    alunos.push('Amanda');
+    alunos.push('Barbara');
+    alunos.push('Carla');
+    alunos[5] = 'Denise';
+
+    console.log(alunos.length);
+
+    alunos.push('Emilia');
+    alunos.push('Fernanda');
+    alunos.push('Geciola');
+    alunos.push('Hilda');
+    alunos.push('Izolda');
+
+    alunos.sort();
+
+    for (let n = 0; n < alunos.length; n++) {
+        document.write(alunos[n] + '<br>');
+    }
+
+</script>
+
+
